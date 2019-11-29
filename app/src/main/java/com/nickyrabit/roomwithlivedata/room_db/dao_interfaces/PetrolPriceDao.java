@@ -7,6 +7,7 @@ import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
+import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
@@ -28,7 +29,7 @@ import java.util.List;
 
 @Dao
 public interface PetrolPriceDao {
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     Long insert(PetrolPrice c);
 
     /*
@@ -43,7 +44,10 @@ public interface PetrolPriceDao {
     *  because Room can perform only some few basic queries
     * without typing them.
     * */
-        @Query("SELECT * FROM 'PetrolPrice'")
+
+
+    @Query("SELECT * FROM 'PetrolPrice'")
+    @OnConflictStrategy()
     LiveData<List<PetrolPrice>> getAllPrices();
 
     @Update

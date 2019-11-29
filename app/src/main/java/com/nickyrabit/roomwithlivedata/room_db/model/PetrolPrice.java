@@ -17,8 +17,7 @@ public class PetrolPrice {
     @ColumnInfo(name = "fuel_price")
     double fuel_price;
 
-    public PetrolPrice(int id, double fuel_price) {
-        this.id = id;
+    public PetrolPrice( double fuel_price) {
         this.fuel_price = fuel_price;
     }
 

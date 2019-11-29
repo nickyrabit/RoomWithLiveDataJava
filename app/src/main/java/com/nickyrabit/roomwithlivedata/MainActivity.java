@@ -23,6 +23,7 @@ import com.nickyrabit.roomwithlivedata.room_db.model.PetrolPrice;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     FuelPriceDatabase fuelPriceDatabase;
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                     //taking the updated data and display it
 
                     Log.d("POS_DB", petrolPrice.getFuel_price() + " has been updated");
-                    Toast.makeText(MainActivity.this, "" + petrolPrice.getFuel_price() + " has been updated", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "table  has been updated", Toast.LENGTH_SHORT).show();
 
                     displayTextView.setText("From the Obeserver : " + petrolPrice.getFuel_price());
 
@@ -75,7 +76,8 @@ public class MainActivity extends AppCompatActivity {
 
                 //get input
                 double price = Double.parseDouble(PetrolPriceEditText.getText().toString());
-                PetrolPrice petrolPrice = new PetrolPrice(1, price);
+
+                PetrolPrice petrolPrice = new PetrolPrice(price);
 
 
                 // save or update to the table Async
