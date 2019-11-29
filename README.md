@@ -7,4 +7,4 @@ and send me the data which is updated and i will present it to the UI.
 
 For more explanation please visit my blog article 
 
-![Image description](https://github.com/nickyrabit/RoomWithLiveDataJava/blob/master/device-2019-11-29-190930.png)
+![Image description](https://github.com/nickyrabit/RoomWithLiveDataJava/blob/master/device-201s9-11-29-190930.png)
