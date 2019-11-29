@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RoomWithLiveDataJava</string>
+    <string name="display">DISPLAY</string>
+</resources>
