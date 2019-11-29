@@ -1,5 +1,10 @@
 package com.nickyrabit.roomwithlivedata;
 
+
+/**Created By Nickyrabit
+ * nickyrabit@gmail.com
+ * nicky@nickylegnard.com*/
+
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;

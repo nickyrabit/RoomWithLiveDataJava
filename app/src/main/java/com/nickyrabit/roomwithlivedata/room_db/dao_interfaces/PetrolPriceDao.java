@@ -1,5 +1,8 @@
 package com.nickyrabit.roomwithlivedata.room_db.dao_interfaces;
 
+/**Created By Nickyrabit
+ * nickyrabit@gmail.com
+ * nicky@nickylegnard.com*/
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;

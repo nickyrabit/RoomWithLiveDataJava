@@ -1,5 +1,9 @@
 package com.nickyrabit.roomwithlivedata.room_db.model;
 
+
+/**Created By Nickyrabit
+ * nickyrabit@gmail.com
+ * nicky@nickylegnard.com*/
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

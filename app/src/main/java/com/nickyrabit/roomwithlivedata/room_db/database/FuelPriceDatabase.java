@@ -1,5 +1,9 @@
 package com.nickyrabit.roomwithlivedata.room_db.database;
 
+/**Created By Nickyrabit
+ * nickyrabit@gmail.com
+ * nicky@nickylegnard.com*/
+
 import android.content.Context;
 
 import androidx.room.Database;
