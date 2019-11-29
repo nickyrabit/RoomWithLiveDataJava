@@ -11,6 +11,18 @@ import com.nickyrabit.roomwithlivedata.room_db.model.PetrolPrice;
 
 import java.util.List;
 
+/**
+ *Now there is something called Data Access Object or DAO.
+ *  They are the main component in your Room Database.
+ *  They process the queries and stuff
+ *
+ *
+ * You declare them by using interfaces.
+ * Now I am making a DAO called PetrolPriceDao.java
+ * that will perform CRUD operations (Create, Read, Update, Delete)
+ */
+
+
 @Dao
 public interface PetrolPriceDao {
     @Insert

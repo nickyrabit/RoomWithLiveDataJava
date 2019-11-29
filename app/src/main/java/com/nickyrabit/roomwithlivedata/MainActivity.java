@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
             public void onChanged(List<PetrolPrice> petrolPriceList) {
 
                 for (PetrolPrice petrolPrice : petrolPriceList) {
+
+                    //taking the updated data and display it
+
                     Log.d("POS_DB", petrolPrice.getFuel_price() + " has been updated");
                     Toast.makeText(MainActivity.this, "" + petrolPrice.getFuel_price() + " has been updated", Toast.LENGTH_SHORT).show();
 
@@ -70,8 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 PetrolPrice petrolPrice = new PetrolPrice(1, price);
 
 
-                // save or update to the table
-
+                // save or update to the table Async
                 new PetrolPriceInsert(MainActivity.this, petrolPrice).execute();
 
 
@@ -95,9 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
             try {
                 FuelPriceDatabase ud = FuelPriceDatabase.getAppDatabase(contextWeakReference.get());
-                //clear the table
-                // ud.attendantSetupDao().clearAllAttendantSetup();
-                //insert new stuff
+
                 ud.petrolPriceDao().insert(petrolPriceList);
 
 
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            Toast.makeText(contextWeakReference.get(), "AttendantSetup List Updated!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(contextWeakReference.get(), "List Updated!", Toast.LENGTH_SHORT).show();
 
         }
     }
