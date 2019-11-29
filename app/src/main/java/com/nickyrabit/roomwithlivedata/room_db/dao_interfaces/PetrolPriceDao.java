@@ -28,7 +28,12 @@ public interface PetrolPriceDao {
     @Insert
     Long insert(PetrolPrice c);
 
-    @Query("SELECT * FROM 'PetrolPrice'")
+    /*
+    * I have set a LIVEDATA on
+    *  PetrolPriceList which has the task of alerting all Observer object
+    * when there is a change in a particular data in our case,
+    * PetrolPrice.*/
+        @Query("SELECT * FROM 'PetrolPrice'")
     LiveData<List<PetrolPrice>> getAllPrices();
 
     @Update
