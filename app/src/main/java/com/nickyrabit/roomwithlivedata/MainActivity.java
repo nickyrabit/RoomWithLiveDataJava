@@ -23,7 +23,6 @@ import com.nickyrabit.roomwithlivedata.room_db.model.PetrolPrice;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
-import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     FuelPriceDatabase fuelPriceDatabase;

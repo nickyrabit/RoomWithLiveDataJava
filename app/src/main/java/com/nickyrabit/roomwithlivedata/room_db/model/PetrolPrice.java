@@ -10,7 +10,7 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class PetrolPrice {
-
+    //Entities are tables and columns
     @PrimaryKey(autoGenerate = true)
     int id;
 
